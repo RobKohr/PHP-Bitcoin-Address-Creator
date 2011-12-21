@@ -1,0 +1,2 @@
+<?
+include('lib/bitcoin_address.php');
