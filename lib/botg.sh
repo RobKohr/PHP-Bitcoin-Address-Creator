@@ -68,7 +68,6 @@ publicKeyToAddress() {
 
 privateKeyToWIF() {
     hash256ToAddress $(openssl ec -text -noout -in data.pem | head -5 | tail -3 | fmt -120 | sed 's/[: ]//g')
-    
 }
 
 openssl  ecparam -genkey -name secp256k1 | tee data.pem &>/dev/null
@@ -77,3 +76,4 @@ echo "PrivateKey"
 privateKeyToWIF
 echo "PublicKey"
 openssl ec -pubout < data.pem | publicKeyToAddress
+rm data.pem
