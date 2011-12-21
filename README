@@ -1,0 +1,11 @@
+Check out example.php to see how to use this in practice. 
+
+This library is really just one function which will return a private key and a public address in an associated array.
+
+Example result of calling bitcoin_address_pair():
+
+Array
+(
+    [private] => KwFR8a14jDAX5V9N6yXNv9tsbMfJHgiWFgp9L3hTRF5K2kCuVwFB
+    [public] => 1KzWzshpyzS4Udmr2RLLTaiMNtPTKTRewh
+)
