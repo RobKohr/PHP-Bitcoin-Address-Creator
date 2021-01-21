@@ -1,3 +1,6 @@
+WARNING: not recommended for use. I don't know if the address generation is secure.
+
+
 Check out example.php to see how to use this in practice. 
 
 This library is really just one function which will return a private key and a public address in an associated array.
